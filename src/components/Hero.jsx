@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 import { styles } from '../style'
-import RobotCanvas from './canvas/Computers'
 import { useMediaQuery } from 'react-responsive'
-
+import OnixCanvas from './canvas/Robots/Onix'
+import QuesilloCanvas from './canvas/Robots/Quesillo'
 const Hero = () => {
 
 
@@ -23,7 +23,8 @@ const Hero = () => {
               <p className={`${styles.heroSubText}`}>Basically, I make robots...</p>
             </div>
           </div>
-          <RobotCanvas />
+          {/* <QuesilloCanvas /> */}
+          <OnixCanvas />
         </div>
       </div>
     </section>
