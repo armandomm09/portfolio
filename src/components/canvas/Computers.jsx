@@ -9,7 +9,7 @@ const Robot = () => {
   const isMobile = useMediaQuery({
     query: '(max-width: 768px)'
   })
-  const computer = useGLTF('/portfolio/public/onix_frc_rapid_react_2022/scene.gltf')
+  const computer = useGLTF('/portfolio/onix_frc_rapid_react_2022/scene.gltf')
   
 
 
