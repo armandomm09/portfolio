@@ -28,7 +28,7 @@ const Onix = () => {
 const OnixCanvas = () => {
   return (
     <Canvas translate='yes' frameloop='demand' shadows camera={{ position: [18, 3, 5], fov: 30 }} gl={{ preserveDrawingBuffer: true }}>
-      <Suspense>
+      <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           maxPolarAngle={Math.PI * 2}
           minPolarAngle={0}
